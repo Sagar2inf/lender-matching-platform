@@ -92,6 +92,9 @@ For testing purposes, email and OTP services are disabled. You can enable them b
     ```
     *The UI will be available at `http://localhost:5173`*
 
+4. **Automatic Borrower Check**
+   * You can directly run the script `backend\tests\test_borrower.py`, to fill the borrower's form. and you can also fill the borrower form by clicking on `look for lenders`.
+
 ---
 
 ## 🖥 User Workflows
