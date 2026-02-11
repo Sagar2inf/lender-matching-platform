@@ -16,7 +16,7 @@ An intelligent, privacy-first FinTech bridge connecting lenders with commercial 
 
 ## 🧠 The Matching Logic: Multi-Factor Decay Model
 
-Our engine doesn't just "Filter"; it **Evaluates**. While **Hard Constraints** act as binary knockouts, **Soft Constraints** use advanced mathematical decay functions to calculate a nuanced Match Score.
+This engine doesn't just "Filter", it **Evaluates**. While **Hard Constraints** act as binary knockouts, **Soft Constraints** use advanced mathematical decay functions to calculate a nuanced Match Score.
 
 ### 1. Hard Constraints (Knockout Phase)
 If a lender marks a field as **Hard Bound (1)**, any borrower failing this criteria is immediately excluded. This ensures lenders only see leads that meet their absolute minimum standards.
@@ -59,6 +59,15 @@ If a borrower presents data points not explicitly desired by the lender (but not
 ### Prerequisites
 * Docker and Docker Compose installed.
 * Node.js (for local frontend development).
+* add .env file, the structure of .env file is as follows
+```
+GEMINI_API_KEYS = *******
+DATABASE_URL = postgresql://user:password@db:5432/lender_db
+REDIS_URL = redis://cache:6379/0
+SYSTEM_EMAIL=******
+SYSTEM_EMAIL_PASSWORD=*******
+```
+For testing purposes, email and OTP services are disabled. You can enable them by uncommenting the relevant code in `lender_router.py`
 
 ### Setup Instructions
 
@@ -88,8 +97,8 @@ If a borrower presents data points not explicitly desired by the lender (but not
 ## 🖥 User Workflows
 
 ### For Lenders
-1.  **Register:** Provide your Industry and Email.
-2.  **Verify:** Enter the OTP sent to your email.
+1.  **Register:** Provide your Industry and Email. (enter any random email for testing only)
+2.  **Verify:** Enter the OTP sent to your email. (enter any random number for testing only)
 3.  **Define Policy:** * Upload a PDF Guideline (extracted automatically).
     * **OR** Fill manually.
     * Mark fields as **Hard** (1) or **Soft** (0).
