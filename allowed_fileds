@@ -1,0 +1,21 @@
+gaurantor_fico -> int
+paynet_score -> int
+years_in_business -> float
+Business Entity Type -> Enum(LLC, Corp, Sole Prop)
+annual_revenue -> Currency
+avg_daily_balance -> Currency
+nsf_count -> int
+dscr_ratio -> float
+industry_tier -> Enum (Tier 1, Tier 2, Tier 3)
+loan_amount -> Currency
+equipment_type -> Enum (Medical, Trucking, CNC)
+equipment_age -> int
+equipment_condition -> Enum(new, used)
+vendor_type -> Enum(Dealer, Private Party)
+business_state -> str
+is_homeowner -> bool
+years_since_bankruptcy_discharge -> float
+has_unpaid_tax_liens -> bool
+years_since_last_judgment -> float
+has_active_bankruptcy -> bool
+ltv_ratio -> float

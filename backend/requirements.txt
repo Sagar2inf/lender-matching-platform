@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+google-genai  
+pydantic
+pymupdf
+python-multipart
+python-dotenv
+pdfplumber
+pydantic[email]
+redis>=5.0.0

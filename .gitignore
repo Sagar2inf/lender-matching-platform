@@ -1,0 +1,7 @@
+backend/.env
+venv
+backend/__pycache__
+
+lender-matching-frontend/node_modules
+
+pdf/
